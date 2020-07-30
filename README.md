@@ -1,3 +1,5 @@
+<img src="https://via.placeholder.com/750x90.png?text=Testing+image+size" width="750" height="90">
+
 ### Hi there 👋
 
 I am Stefan Gabos, a web developer working from Bucharest, Romania. I'm half Hungarian, stubborn, articulate, and slightly afraid of women.
