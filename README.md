@@ -1,5 +1,7 @@
 ### Hi there 👋
 
+<img src="https://cr-ss-service.azurewebsites.net/api/ScreenShot?widget=summary&username=stefangabos&badges=3&show-avatar=false&style=--header-bg-color:%23FFF;--border-radius:10px;--header-text-color:%23000"/>
+
 I am Stefan Gabos, a web developer working from Bucharest, Romania. I'm half Hungarian, stubborn, articulate, and slightly afraid of women.
 
 I started coding when I was around 14 (that's way back in 1994), and I am extremely passionate about it. I started coding in BASIC and then went on with Assembler and Turbo Pascal. In 1997 I started developing commercial applications using Microsoft Access. Since 2001 I'm developing exclusively for the web using PHP, MySQL, HTML, CSS and JavaScript.
