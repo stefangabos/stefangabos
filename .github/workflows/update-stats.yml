@@ -2,7 +2,7 @@ name: Update stats
 
 on:
   schedule:
-    # every monday at 06:30 utc, after the stefangabos.github.io run
+    # every monday at 06:30 utc, after stefangabos.github.io has refreshed its numbers
     - cron: '30 6 * * 1'
   workflow_dispatch:
 
@@ -17,20 +17,16 @@ jobs:
       - uses: actions/setup-python@v7
         with:
           python-version: '3.12'
-      - name: Refresh numbers in README.md
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          # the script lives in the stefangabos.github.io repository so both pages share one copy
-          curl -fsSL https://raw.githubusercontent.com/stefangabos/stefangabos.github.io/main/.github/scripts/update_stats.py -o /tmp/update_stats.py
-          python3 /tmp/update_stats.py README.md
+      - name: Render the stats card
+        run: python3 .github/scripts/render_stats.py
       - name: Commit if anything changed
         run: |
-          if git diff --quiet; then
-            echo 'numbers unchanged'
+          git add images README.md
+          if git diff --cached --quiet; then
+            echo 'stats unchanged'
             exit 0
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git commit -am 'Updated stats'
+          git commit -m 'Updated stats'
           git push
