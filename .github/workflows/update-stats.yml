@@ -1,0 +1,36 @@
+name: Update stats
+
+on:
+  schedule:
+    # every monday at 06:30 utc, after the stefangabos.github.io run
+    - cron: '30 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Refresh numbers in README.md
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # the script lives in the stefangabos.github.io repository so both pages share one copy
+          curl -fsSL https://raw.githubusercontent.com/stefangabos/stefangabos.github.io/main/.github/scripts/update_stats.py -o /tmp/update_stats.py
+          python3 /tmp/update_stats.py README.md
+      - name: Commit if anything changed
+        run: |
+          if git diff --quiet; then
+            echo 'numbers unchanged'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -am 'Updated stats'
+          git push
