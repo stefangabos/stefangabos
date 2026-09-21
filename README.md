@@ -7,7 +7,7 @@ These days I also build fast, custom-coded one-page websites for small businesse
 <!-- stats: the images are regenerated weekly by .github/workflows/update-stats.yml -->
 <a href="https://stefangabos.github.io/"><picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/stats-dark.svg">
-  <img src="images/stats-light.svg" width="840" alt="8.8M CDN requests / month, 717K npm downloads / year, 520K Composer installs, all time, 3.3K GitHub stars. #830 Top 3% of PHP developers worldwide, #4,129 Top 5% of JavaScript developers worldwide, #9,732 GitHub developer by total stars.">
+  <img src="images/stats-light.svg" width="840" alt="9M CDN requests / month, 719K npm downloads / year, 521K Composer installs, all time, 3.3K GitHub stars. #830 Top 3% of PHP developers worldwide, #4,129 Top 5% of JavaScript developers worldwide, #9,737 GitHub developer by total stars.">
 </picture></a>
 
 <sub>Usage from jsDelivr, npm, Packagist and GitHub. Rankings from <a href="https://profile.codersrank.io/user/stefangabos">CodersRank</a> and <a href="https://gitstar-ranking.com/stefangabos">Gitstar Ranking</a>. Refreshed weekly. All my libraries: <a href="https://stefangabos.github.io/">stefangabos.github.io</a></sub>
