@@ -2,8 +2,6 @@
 
 I am Stefan Gabos, a web developer working from Bucharest, Romania. I'm half Hungarian, stubborn, articulate, and slightly afraid of women.
 
-These days I also build fast, custom-coded one-page websites for small businesses at [PageDrop.pro](https://pagedrop.pro) - $297 once, no monthly fees.
-
 <!-- stats: the images are regenerated weekly by .github/workflows/update-stats.yml -->
 <a href="https://stefangabos.github.io/"><picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/stats-dark.svg">
@@ -20,6 +18,8 @@ I am an incurable workaholic and a perfectionist. I work with PHP, MySQL, HTML a
 I develop rock-solid PHP libraries and super-lightweight, highly optimized, bad-ass jQuery plugins and open-source them because I am a web developer even when I'm not at work.
 
 When working, I listen to massive amounts of music – alternative rock, in general. When I am not working (it sometimes happens), I enjoy playing the guitar, sleeping, cooking, watching Formula One or a good movie.
+
+These days I also build fast, custom-coded one-page websites for small businesses at [PageDrop.pro](https://pagedrop.pro) - $297 once, no monthly fees.
 
 <!--
 **stefangabos/stefangabos** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
